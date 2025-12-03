@@ -1,0 +1,113 @@
+{
+  "requests": [
+    {
+      "id": "local-1764776435729-2-deploy",
+      "projectId": "portfolio-agent",
+      "planId": "local-1764776435729-2",
+      "step": {
+        "id": "deploy",
+        "action": "deploy-to-staging",
+        "requiresApproval": true,
+        "rationale": "Deploy requires approval"
+      },
+      "status": "pending",
+      "createdAt": "2025-12-03T15:40:38.670Z"
+    },
+    {
+      "id": "local-1764776242740-767-deploy",
+      "projectId": "portfolio-agent",
+      "planId": "local-1764776242740-767",
+      "step": {
+        "id": "deploy",
+        "action": "deploy-to-staging",
+        "requiresApproval": true,
+        "rationale": "Deploy requires approval"
+      },
+      "status": "approved",
+      "createdAt": "2025-12-03T15:37:25.710Z",
+      "resolvedAt": "2025-12-03T15:40:34.972Z",
+      "resumed": true,
+      "resumedAt": "2025-12-03T15:40:35.725Z"
+    },
+    {
+      "id": "local-1764776133521-15-deploy",
+      "projectId": "portfolio-agent",
+      "planId": "local-1764776133521-15",
+      "step": {
+        "id": "deploy",
+        "action": "deploy-to-staging",
+        "requiresApproval": true,
+        "rationale": "Deploy requires approval"
+      },
+      "status": "approved",
+      "createdAt": "2025-12-03T15:35:36.462Z",
+      "resolvedAt": "2025-12-03T15:37:02.504Z",
+      "resumed": true,
+      "resumedAt": "2025-12-03T15:37:22.735Z"
+    },
+    {
+      "id": "local-1764775917666-368-deploy",
+      "projectId": "portfolio-agent",
+      "planId": "local-1764775917666-368",
+      "step": {
+        "id": "deploy",
+        "action": "deploy-to-staging",
+        "requiresApproval": true,
+        "rationale": "Deploy requires approval"
+      },
+      "status": "approved",
+      "createdAt": "2025-12-03T15:32:00.626Z",
+      "resolvedAt": "2025-12-03T15:35:06.629Z",
+      "resumed": true,
+      "resumedAt": "2025-12-03T15:35:33.511Z"
+    },
+    {
+      "id": "local-1764775777963-338-deploy",
+      "projectId": "portfolio-agent",
+      "planId": "local-1764775777963-338",
+      "step": {
+        "id": "deploy",
+        "action": "deploy-to-staging",
+        "requiresApproval": true,
+        "rationale": "Deploy requires approval"
+      },
+      "status": "approved",
+      "createdAt": "2025-12-03T15:29:40.915Z",
+      "resolvedAt": "2025-12-03T15:31:56.805Z",
+      "resumed": true,
+      "resumedAt": "2025-12-03T15:31:57.661Z"
+    },
+    {
+      "id": "local-1764775486362-226-deploy",
+      "projectId": "portfolio-agent",
+      "planId": "local-1764775486362-226",
+      "step": {
+        "id": "deploy",
+        "action": "deploy-to-staging",
+        "requiresApproval": true,
+        "rationale": "Deploy requires approval"
+      },
+      "status": "approved",
+      "createdAt": "2025-12-03T15:24:49.340Z",
+      "resolvedAt": "2025-12-03T15:29:19.194Z",
+      "resumed": true,
+      "resumedAt": "2025-12-03T15:29:37.958Z"
+    },
+    {
+      "id": "local-1764767974793-53-deploy",
+      "projectId": "portfolio-agent",
+      "planId": "local-1764767974793-53",
+      "step": {
+        "id": "deploy",
+        "action": "deploy-to-staging",
+        "requiresApproval": true,
+        "rationale": "Deploy requires approval"
+      },
+      "status": "approved",
+      "createdAt": "2025-12-03T13:19:37.786Z",
+      "resolvedAt": "2025-12-03T15:23:56.059Z",
+      "resumed": true,
+      "resumedAt": "2025-12-03T15:24:46.346Z"
+    }
+  ]
+}

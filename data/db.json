@@ -1,0 +1,35 @@
+{
+  "docs": [
+    {
+      "id": "portfolio-agent",
+      "slug": "portfolio-agent",
+      "title": "Portfolio Agent",
+      "domain": "DevOps",
+      "description": "Agent that monitors repo, builds, tests, and deploys the portfolio.",
+      "tech": [
+        "Node.js",
+        "Next.js",
+        "CI/CD"
+      ],
+      "tags": [
+        "agentic ai",
+        "orchestration"
+      ]
+    },
+    {
+      "id": "lead-qualifier",
+      "slug": "lead-qualifier",
+      "title": "Lead Qualifier Agent",
+      "domain": "Sales",
+      "description": "Enrichment and scoring agent for lead qualification.",
+      "tech": [
+        "Node.js",
+        "SSE"
+      ],
+      "tags": [
+        "automation",
+        "sales"
+      ]
+    }
+  ]
+}

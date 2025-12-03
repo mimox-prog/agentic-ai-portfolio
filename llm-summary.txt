@@ -1,0 +1,33 @@
+Portfolio: Marouan — Agentic AI Architect
+
+Overview:
+I build agentic AI systems and automation platforms for enterprises. Core offerings: Compliance Automation, Multi-Agent Orchestration, Autonomous API Integration. Focus on reliability, governance, and measurable ROI.
+
+Projects:
+1) RAG Compliance Agent Dashboard
+Domain: Financial Services
+UI Patterns: Real-time agent monitoring, human-in-loop approvals, audit trails
+Tech: Next.js, TF-IDF demo search, pdf-parse, lowdb (demo)
+Impact: Reduced review time from 40h to 4h (demo metric)
+Endpoints: /api/compliance-simulator (demo)
+
+2) Supply Chain Multi-Agent Collaboration
+Domain: Logistics
+UI Patterns: Bento grid, agent swarm coordination, orchestration visualizations
+Tech: Next.js, AgentCard components, demo logs
+Impact: Optimized route planning and procurement signals
+Endpoints: /projects (case study)
+
+3) Autonomous API Integration Agent
+Domain: SaaS Ops
+UI Patterns: Spec generation, change detection, audit logs
+Tech: Next.js, demo TF-IDF search, low-cost local tooling
+Impact: Eliminated 30h/week of manual maintenance (demo metric)
+Endpoints: /demos (demo hub)
+
+How to interact:
+- Try live demos at /demos
+- For pilot: 7-day pilot offer; contact via hello@yourdomain.com
+- Repo: github.com/your (replace with your repo link)
+
+Keywords: agentic AI, automation systems, orchestration platforms, compliance automation, autonomous agents, enterprise automation, RAG, multi-agent orchestration.
