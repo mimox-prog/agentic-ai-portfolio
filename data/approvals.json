@@ -10,8 +10,9 @@
         "requiresApproval": true,
         "rationale": "Deploy requires approval"
       },
-      "status": "pending",
-      "createdAt": "2025-12-03T15:40:38.670Z"
+      "status": "approved",
+      "createdAt": "2025-12-03T15:40:38.670Z",
+      "resolvedAt": "2025-12-04T13:27:42.234Z"
     },
     {
       "id": "local-1764776242740-767-deploy",
