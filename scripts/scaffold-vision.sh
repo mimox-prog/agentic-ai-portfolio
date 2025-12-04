@@ -1,32 +1,42 @@
 #!/usr/bin/env bash
 set -e
-mkdir -p apps/portfolio pages api public styles services/lead services/rag data scripts .github/workflows
+
+mkdir -p apps/portfolio/pages/demos apps/portfolio/pages/api/lead services/lead services/rag data .github/workflows
 
 # Next.js app placeholder
 cat > apps/portfolio/package.json <<'JSON'
 {
-  "name":"portfolio",
-  "private":true,
-  "scripts":{"dev":"next dev -p 3000","build":"next build","start":"next start -p 3000","lint":"eslint . --ext .ts,.tsx"},
-  "dependencies":{"next":"14","react":"18","react-dom":"18"}
+  "name": "portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "next": "14",
+    "react": "18",
+    "react-dom": "18"
+  }
 }
 JSON
 
 # Minimal Next.js page for demo
-mkdir -p apps/portfolio/pages/demos
 cat > apps/portfolio/pages/demos/lead.tsx <<'TSX'
 import React from 'react';
-export default function LeadDemo(){ return (
-  <main style={{padding:24}}>
-    <h1>Lead Qualifier Demo</h1>
-    <p>Upload CSV or paste leads to run the demo. This page calls /api/lead/qualify.</p>
-    <pre style={{background:'#f6f8fa',padding:12}}>Demo UI placeholder — replace with real UI</pre>
-  </main>
-)}
+export default function LeadDemo() {
+  return (
+    <main style={{ padding: 24 }}>
+      <h1>Lead Qualifier Demo</h1>
+      <p>Upload CSV or paste leads to run the demo. This page calls /api/lead/qualify.</p>
+      <pre style={{ background: '#f6f8fa', padding: 12 }}>Demo UI placeholder — replace with real UI</pre>
+    </main>
+  );
+}
 TSX
 
 # Next.js API proxy to Python service
-mkdir -p apps/portfolio/pages/api/lead
 cat > apps/portfolio/pages/api/lead/qualify.ts <<'TS'
 import type { NextApiRequest, NextApiResponse } from 'next';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
@@ -43,7 +53,6 @@ fastapi
 uvicorn[standard]
 pydantic
 requests
-# add langchain and embeddings when ready
 TXT
 
 cat > services/lead/app.py <<'PY'
@@ -79,7 +88,7 @@ def plan_for_leads(leads):
 PY
 
 cat > services/lead/executor.py <<'PY'
-import asyncio, json
+import asyncio
 async def execute_plan(plan):
     logs=[]
     for step in plan['steps']:
@@ -141,5 +150,4 @@ jobs:
           npm run lint || true
 YML
 
-chmod +x scripts/scaffold-vision.sh
-echo "Scaffold created. Run ./scripts/scaffold-vision.sh to create files."
+echo "Scaffold created."

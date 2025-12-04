@@ -1,11 +1,10 @@
-
+version: '3.8'
 services:
-  nextjs:
-    build: .
-    ports:
-      - "3000:3000"
-    volumes:
-      - .:/app
-      - /app/node_modules
+  web:
+    build: ./apps/portfolio
+    ports: ['3000:3000']
     environment:
-      - NODE_ENV=development
+      - LEAD_SERVICE_URL=http://lead:8001/qualify
+  lead:
+    build: ./services/lead
+    ports: ['8001:8001']

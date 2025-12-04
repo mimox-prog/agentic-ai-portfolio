@@ -1,0 +1,937 @@
+[
+  {
+    "event": "plan_received",
+    "runId": "lead-1764783816",
+    "plan": {
+      "planId": "lead-1764783816",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 2,
+      "leads": [
+        {
+          "name": "Alice",
+          "email": "a@x.com"
+        },
+        {
+          "name": "Bob",
+          "email": "b@x.com"
+        }
+      ]
+    },
+    "timestamp": 1764783816
+  },
+  {
+    "event": "plan_started",
+    "runId": "lead-1764783816",
+    "plan": {
+      "planId": "lead-1764783816",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 2,
+      "leads": [
+        {
+          "name": "Alice",
+          "email": "a@x.com"
+        },
+        {
+          "name": "Bob",
+          "email": "b@x.com"
+        }
+      ]
+    },
+    "timestamp": 52402
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764783816",
+    "step": "normalize",
+    "timestamp": 52402
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764783816",
+    "step": "normalize",
+    "timestamp": 52403
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764783816",
+    "step": "score",
+    "timestamp": 52403
+  },
+  {
+    "event": "step_scored",
+    "runId": "lead-1764783816",
+    "step": "score",
+    "sample": [
+      {
+        "name": "Alice",
+        "email": "a@x.com",
+        "score": 0.72,
+        "confidence": 0.75
+      },
+      {
+        "name": "Bob",
+        "email": "b@x.com",
+        "score": 0.54,
+        "confidence": 0.61
+      }
+    ],
+    "timestamp": 52403
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764783816",
+    "step": "score",
+    "timestamp": 52403
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764783816",
+    "step": "export",
+    "timestamp": 52403
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764783816",
+    "step": "export",
+    "timestamp": 52403
+  },
+  {
+    "event": "plan_completed",
+    "runId": "lead-1764783816",
+    "result": {
+      "runId": "lead-1764783816",
+      "steps": [
+        {
+          "step": "normalize",
+          "status": "succeeded"
+        },
+        {
+          "step": "score",
+          "status": "succeeded",
+          "detail": {
+            "sample": [
+              {
+                "name": "Alice",
+                "email": "a@x.com",
+                "score": 0.72,
+                "confidence": 0.75
+              },
+              {
+                "name": "Bob",
+                "email": "b@x.com",
+                "score": 0.54,
+                "confidence": 0.61
+              }
+            ]
+          }
+        },
+        {
+          "step": "export",
+          "status": "succeeded"
+        }
+      ],
+      "status": "completed",
+      "scored_leads": [
+        {
+          "name": "Alice",
+          "email": "a@x.com",
+          "score": 0.72,
+          "confidence": 0.75
+        },
+        {
+          "name": "Bob",
+          "email": "b@x.com",
+          "score": 0.54,
+          "confidence": 0.61
+        }
+      ]
+    },
+    "timestamp": 52403
+  },
+  {
+    "event": "plan_result",
+    "runId": "lead-1764783816",
+    "result_summary": {
+      "status": "completed"
+    },
+    "timestamp": 1764783816
+  },
+  {
+    "event": "plan_received",
+    "runId": "lead-1764786802",
+    "plan": {
+      "planId": "lead-1764786802",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 1,
+      "leads": [
+        {
+          "name": "Alice",
+          "email": "a@x.com"
+        }
+      ]
+    },
+    "timestamp": 1764786802
+  },
+  {
+    "event": "plan_started",
+    "runId": "lead-1764786802",
+    "plan": {
+      "planId": "lead-1764786802",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 1,
+      "leads": [
+        {
+          "name": "Alice",
+          "email": "a@x.com"
+        }
+      ]
+    },
+    "ts": 1764786802
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764786802",
+    "step": "normalize",
+    "ts": 1764786802
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764786802",
+    "step": "normalize",
+    "ts": 1764786802
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764786802",
+    "step": "score",
+    "ts": 1764786802
+  },
+  {
+    "event": "step_scored",
+    "runId": "lead-1764786802",
+    "step": "score",
+    "sample": [
+      {
+        "name": "Alice",
+        "email": "a@x.com",
+        "score": 0.5,
+        "confidence": 0.5,
+        "rationale": "fallback: HTTPSConnectionPool(host='api.openrouter.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x73137a0593f0>: Failed to resolve 'api.openrouter.ai' ([Errno -2] Name or service not known)\"))",
+        "raw_response": ""
+      }
+    ],
+    "ts": 1764786803
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764786802",
+    "step": "score",
+    "ts": 1764786803
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764786802",
+    "step": "export",
+    "ts": 1764786803
+  },
+  {
+    "event": "step_pending_approval",
+    "runId": "lead-1764786802",
+    "step": "export",
+    "ts": 1764786803
+  },
+  {
+    "event": "plan_result",
+    "runId": "lead-1764786802",
+    "result_summary": {
+      "status": "pending_approval"
+    },
+    "timestamp": 1764786803
+  },
+  {
+    "event": "plan_received",
+    "runId": "lead-1764790901",
+    "plan": {
+      "planId": "lead-1764790901",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 1,
+      "leads": [
+        {
+          "name": "Alice",
+          "email": "a@x.com"
+        }
+      ]
+    },
+    "timestamp": 1764790901
+  },
+  {
+    "event": "plan_started",
+    "runId": "lead-1764790901",
+    "plan": {
+      "planId": "lead-1764790901",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 1,
+      "leads": [
+        {
+          "name": "Alice",
+          "email": "a@x.com"
+        }
+      ]
+    },
+    "ts": 1764790901
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764790901",
+    "step": "normalize",
+    "ts": 1764790901
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764790901",
+    "step": "normalize",
+    "ts": 1764790901
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764790901",
+    "step": "score",
+    "ts": 1764790901
+  },
+  {
+    "event": "step_scored",
+    "runId": "lead-1764790901",
+    "step": "score",
+    "sample": [
+      {
+        "name": "Alice",
+        "email": "a@x.com",
+        "score": 0.5,
+        "confidence": 0.5,
+        "rationale": "fallback: HTTPSConnectionPool(host='api.openrouter.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x73137a0597e0>: Failed to resolve 'api.openrouter.ai' ([Errno -2] Name or service not known)\"))",
+        "raw_response": ""
+      }
+    ],
+    "ts": 1764790904
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764790901",
+    "step": "score",
+    "ts": 1764790904
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764790901",
+    "step": "export",
+    "ts": 1764790904
+  },
+  {
+    "event": "step_pending_approval",
+    "runId": "lead-1764790901",
+    "step": "export",
+    "ts": 1764790905
+  },
+  {
+    "event": "plan_result",
+    "runId": "lead-1764790901",
+    "result_summary": {
+      "status": "pending_approval"
+    },
+    "timestamp": 1764790905
+  },
+  {
+    "event": "plan_received",
+    "runId": "lead-1764791943",
+    "plan": {
+      "planId": "lead-1764791943",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 2,
+      "leads": [
+        {
+          "name": "Alice",
+          "email": "a@x.com"
+        },
+        {
+          "name": "Bob",
+          "email": "b@x.com"
+        }
+      ]
+    },
+    "timestamp": 1764791943
+  },
+  {
+    "event": "plan_started",
+    "runId": "lead-1764791943",
+    "plan": {
+      "planId": "lead-1764791943",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 2,
+      "leads": [
+        {
+          "name": "Alice",
+          "email": "a@x.com"
+        },
+        {
+          "name": "Bob",
+          "email": "b@x.com"
+        }
+      ]
+    },
+    "ts": 1764791943
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764791943",
+    "step": "normalize",
+    "ts": 1764791943
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764791943",
+    "step": "normalize",
+    "ts": 1764791943
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764791943",
+    "step": "score",
+    "ts": 1764791943
+  },
+  {
+    "event": "step_scored",
+    "runId": "lead-1764791943",
+    "step": "score",
+    "sample": [
+      {
+        "name": "Alice",
+        "email": "a@x.com",
+        "score": 0.5,
+        "confidence": 0.5,
+        "rationale": "fallback: HTTPSConnectionPool(host='api.openrouter.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x73137a05b340>: Failed to resolve 'api.openrouter.ai' ([Errno -2] Name or service not known)\"))",
+        "raw_response": ""
+      },
+      {
+        "name": "Bob",
+        "email": "b@x.com",
+        "score": 0.5,
+        "confidence": 0.5,
+        "rationale": "fallback: HTTPSConnectionPool(host='api.openrouter.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x73137a059090>: Failed to resolve 'api.openrouter.ai' ([Errno -2] Name or service not known)\"))",
+        "raw_response": ""
+      }
+    ],
+    "ts": 1764791943
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764791943",
+    "step": "score",
+    "ts": 1764791943
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764791943",
+    "step": "export",
+    "ts": 1764791943
+  },
+  {
+    "event": "step_pending_approval",
+    "runId": "lead-1764791943",
+    "step": "export",
+    "ts": 1764791943
+  },
+  {
+    "event": "plan_result",
+    "runId": "lead-1764791943",
+    "result_summary": {
+      "status": "pending_approval"
+    },
+    "timestamp": 1764791943
+  },
+  {
+    "event": "plan_received",
+    "runId": "lead-1764796059",
+    "plan": {
+      "planId": "lead-1764796059",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 1,
+      "leads": [
+        {
+          "name": "CI Test",
+          "email": "ci@local"
+        }
+      ]
+    },
+    "timestamp": 1764796059
+  },
+  {
+    "event": "plan_started",
+    "runId": "lead-1764796059",
+    "plan": {
+      "planId": "lead-1764796059",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 1,
+      "leads": [
+        {
+          "name": "CI Test",
+          "email": "ci@local"
+        }
+      ]
+    },
+    "ts": 1764796059
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764796059",
+    "step": "normalize",
+    "ts": 1764796059
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764796059",
+    "step": "normalize",
+    "ts": 1764796060
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764796059",
+    "step": "score",
+    "ts": 1764796060
+  },
+  {
+    "event": "step_scored",
+    "runId": "lead-1764796059",
+    "step": "score",
+    "sample": [
+      {
+        "name": "CI Test",
+        "email": "ci@local",
+        "score": 0.5,
+        "confidence": 0.5,
+        "rationale": "fallback: HTTPSConnectionPool(host='api.openrouter.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x73137a05a3b0>: Failed to resolve 'api.openrouter.ai' ([Errno -3] Temporary failure in name resolution)\"))",
+        "raw_response": ""
+      }
+    ],
+    "ts": 1764796070
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764796059",
+    "step": "score",
+    "ts": 1764796070
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764796059",
+    "step": "export",
+    "ts": 1764796070
+  },
+  {
+    "event": "step_pending_approval",
+    "runId": "lead-1764796059",
+    "step": "export",
+    "ts": 1764796070
+  },
+  {
+    "event": "plan_result",
+    "runId": "lead-1764796059",
+    "result_summary": {
+      "status": "pending_approval"
+    },
+    "timestamp": 1764796070
+  },
+  {
+    "event": "plan_received",
+    "runId": "lead-1764796095",
+    "plan": {
+      "planId": "lead-1764796095",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 1,
+      "leads": [
+        {
+          "name": "CI Test",
+          "email": "ci@local"
+        }
+      ]
+    },
+    "timestamp": 1764796095
+  },
+  {
+    "event": "plan_started",
+    "runId": "lead-1764796095",
+    "plan": {
+      "planId": "lead-1764796095",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 1,
+      "leads": [
+        {
+          "name": "CI Test",
+          "email": "ci@local"
+        }
+      ]
+    },
+    "ts": 1764796095
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764796095",
+    "step": "normalize",
+    "ts": 1764796095
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764796095",
+    "step": "normalize",
+    "ts": 1764796095
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764796095",
+    "step": "score",
+    "ts": 1764796095
+  },
+  {
+    "event": "step_scored",
+    "runId": "lead-1764796095",
+    "step": "score",
+    "sample": [
+      {
+        "name": "CI Test",
+        "email": "ci@local",
+        "score": 0.5,
+        "confidence": 0.5,
+        "rationale": "fallback: HTTPSConnectionPool(host='api.openrouter.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x731379f18730>: Failed to resolve 'api.openrouter.ai' ([Errno -3] Temporary failure in name resolution)\"))",
+        "raw_response": ""
+      }
+    ],
+    "ts": 1764796106
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764796095",
+    "step": "score",
+    "ts": 1764796106
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764796095",
+    "step": "export",
+    "ts": 1764796106
+  },
+  {
+    "event": "step_pending_approval",
+    "runId": "lead-1764796095",
+    "step": "export",
+    "ts": 1764796106
+  },
+  {
+    "event": "plan_result",
+    "runId": "lead-1764796095",
+    "result_summary": {
+      "status": "pending_approval"
+    },
+    "timestamp": 1764796106
+  },
+  {
+    "event": "plan_received",
+    "runId": "lead-1764796424",
+    "plan": {
+      "planId": "lead-1764796424",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 1,
+      "leads": [
+        {
+          "name": "Test",
+          "email": "t@x.com"
+        }
+      ]
+    },
+    "timestamp": 1764796424
+  },
+  {
+    "event": "plan_started",
+    "runId": "lead-1764796424",
+    "plan": {
+      "planId": "lead-1764796424",
+      "steps": [
+        {
+          "id": "normalize",
+          "action": "normalize-leads"
+        },
+        {
+          "id": "score",
+          "action": "score-leads",
+          "usesLLM": true
+        },
+        {
+          "id": "export",
+          "action": "export-qualified",
+          "requiresApproval": true
+        }
+      ],
+      "leads_count": 1,
+      "leads": [
+        {
+          "name": "Test",
+          "email": "t@x.com"
+        }
+      ]
+    },
+    "ts": 1764796424
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764796424",
+    "step": "normalize",
+    "ts": 1764796424
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764796424",
+    "step": "normalize",
+    "ts": 1764796424
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764796424",
+    "step": "score",
+    "ts": 1764796424
+  },
+  {
+    "event": "step_scored",
+    "runId": "lead-1764796424",
+    "step": "score",
+    "sample": [
+      {
+        "name": "Test",
+        "email": "t@x.com",
+        "score": 0.5,
+        "confidence": 0.5,
+        "rationale": "fallback: HTTPSConnectionPool(host='api.openrouter.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x73137a058ac0>: Failed to resolve 'api.openrouter.ai' ([Errno -3] Temporary failure in name resolution)\"))",
+        "raw_response": ""
+      }
+    ],
+    "ts": 1764796434
+  },
+  {
+    "event": "step_succeeded",
+    "runId": "lead-1764796424",
+    "step": "score",
+    "ts": 1764796434
+  },
+  {
+    "event": "step_started",
+    "runId": "lead-1764796424",
+    "step": "export",
+    "ts": 1764796434
+  },
+  {
+    "event": "step_pending_approval",
+    "runId": "lead-1764796424",
+    "step": "export",
+    "ts": 1764796435
+  },
+  {
+    "event": "plan_result",
+    "runId": "lead-1764796424",
+    "result_summary": {
+      "status": "pending_approval"
+    },
+    "timestamp": 1764796435
+  }
+]

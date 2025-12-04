@@ -1,0 +1,15 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with: node-version: '20'
+      - name: Lint JS
+        run: |
+          cd apps/portfolio || exit 0
+          npm ci || true
+          npm run lint || true
